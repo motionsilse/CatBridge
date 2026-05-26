@@ -6,3 +6,5 @@ This repository is used only for public releases, issue tracking, and update not
 The source code is not publicly available.
 
 Please download CatBridge only from the GitHub Releases page of this repository.
+
+https://catbridge.guildwar.win/

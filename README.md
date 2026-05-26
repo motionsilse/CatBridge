@@ -29,7 +29,7 @@ NPC dialogue and party or squad chat are translated natively. Your own message c
 <table>
   <tr>
     <td width="50%">
-      <img src="https://catbridge.guildwar.win/images/v11/story-ko.png" alt="CatBridge story dialogue translated into Korean"><br>
+      <img src="images/readme/story-ko.jpg" alt="CatBridge story dialogue translated into Korean"><br>
       <strong>Story translation</strong> keeps NPC lines readable while the game stays open.
     </td>
     <td width="50%">
@@ -72,7 +72,7 @@ CatBridge supports dozens of languages through free translation engines and opti
 
 CatBridge now covers native translation, OCR, Discord voice translation, cursor tools, and WvW reports.
 
-<img src="https://catbridge.guildwar.win/images/v11/ocr-combined-ko.png" alt="CatBridge OCR translating Guild Wars 2 screen text">
+<img src="images/readme/ocr-combined-ko.jpg" alt="CatBridge OCR translating Guild Wars 2 screen text">
 
 **OCR** translates text you drag on screen, and can also translate a saved chat area with a hotkey.
 
@@ -87,7 +87,7 @@ CatBridge now covers native translation, OCR, Discord voice translation, cursor 
       <strong>Mobility Tech</strong> replaces the GW2 cursor. You can customize it, share presets by code, and change colors between combat and non-combat states.
     </td>
     <td width="33%">
-      <img src="https://catbridge.guildwar.win/images/v11/combat-report-wvw.png" alt="CatBridge WvW combat report overlay"><br>
+      <img src="images/readme/combat-report-wvw.jpg" alt="CatBridge WvW combat report overlay"><br>
       <strong>Combat Tech</strong> uses AxiBridge to share quick WvW combat reports in chat or view detailed results in an overlay window.
     </td>
   </tr>
@@ -124,6 +124,6 @@ ArcDPS, Unofficial Extras, and `arcdps_catbridge.dll` must all live in the same 
 
 ## Notes
 
-CatBridge is not affiliated with, endorsed by, or approved by ArcDPS or arcdps_unofficial_extras.
+CatBridge is not affiliated with, endorsed by, or approved by ArcDPS, arcdps_unofficial_extras, or AxiBridge.
 
 CatBridge is an unofficial fan-made tool and is not affiliated with, endorsed by, or approved by ArenaNet or NCSOFT.

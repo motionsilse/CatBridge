@@ -126,7 +126,7 @@ ArcDPS, Unofficial Extras, and `arcdps_catbridge.dll` must all live in the same 
 
 # Important install check
 Use the ArcDPS About tab to find the real folder
-If you use Nexus or another addon manager, do not guess from the GW2 folder. Launch the game, open ArcDPS options with Alt + Shift + T, then open the last About / Info tab. Check that ArcDPS is up to date there, then look at the folder path shown at the top of the tab. That path is the folder ArcDPS is actually running from, and that is the correct install location.
+If you use Nexus or another addon manager, do not guess from the GW2 folder. Launch the game, open ArcDPS options with Alt + Shift + T, then open the last "About" tab. Check that ArcDPS is up to date there, then look at the folder path shown at the top of the tab. That path is the folder ArcDPS is actually running from, and that is the correct install location.
 
 Put both arcdps_unofficial_extras.dll and arcdps_catbridge.dll in that same folder. This still works even if Unofficial Extras was not loaded yet, or if you accidentally installed it somewhere else first. Most failed installs happen because the DLLs were placed in the visible GW2 folder while ArcDPS was actually running from an addon-manager subfolder.
 

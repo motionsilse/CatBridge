@@ -8,6 +8,8 @@
 
 CatBridge translates story dialogue, party and squad chat, screen OCR, Discord voice, TTS, voice chat input, custom cursors, and WvW combat reports in one Guild Wars 2 companion app.
 
+From V1.1.2, CatBridge also includes an experimental All Chat Translation mode that can be enabled at the user's own responsibility after accepting the in-app notice.
+
 Official site: https://catbridge.guildwar.win
 
 > CatBridge is closed-source software. This repository is used for public releases, issue tracking, and update notes.

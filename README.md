@@ -132,6 +132,8 @@ Put both arcdps_unofficial_extras.dll and arcdps_catbridge.dll in that same fold
 
 After moving the files, fully restart Guild Wars 2 and open the ArcDPS About / Info tab again. A correct install shows both arcdps_unofficial_extras.dll and arcdps_catbridge.dll as loaded there. If either one is missing, it is still in the wrong folder.
 
+Other DLL files must also be in the same folder for additional functions to work properly.
+
 ## Notes
 
 CatBridge is not affiliated with, endorsed by, or approved by ArcDPS, arcdps_unofficial_extras, or AxiBridge.

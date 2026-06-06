@@ -12,6 +12,8 @@ From V1.1.2, CatBridge also includes an experimental All Chat Translation mode t
 
 Official site: https://catbridge.guildwar.win
 
+Community Discord: https://discord.gg/hndrDWN7zA
+
 > CatBridge is closed-source software. This repository is used for public releases, issue tracking, and update notes.
 
 ## The App

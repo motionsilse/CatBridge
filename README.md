@@ -6,9 +6,7 @@
 
 **Play Guild Wars 2 in your language.**
 
-CatBridge translates story dialogue, party and squad chat, screen OCR, Discord voice, TTS, voice chat input, custom cursors, and WvW combat reports in one Guild Wars 2 companion app.
-
-CatBridge includes all chat translation modes (Guild, Map, Team, General, and Whisper support) that can be activated at the user's discretion after accepting the in-app notices.
+CatBridge translates story dialogue, Guild Wars 2 chat, screen OCR, Discord voice, TTS, voice chat input, custom cursors, and WvW combat reports in one companion app.
 
 Official site: https://catbridge.guildwar.win
 
@@ -28,7 +26,7 @@ CatBridge initial setup page. The UI changes to the language you choose when tha
 
 ## Story, Chat, And Your Own Messages
 
-NPC dialogue and party or squad chat are translated natively. Your own message can be translated before you send it.
+NPC dialogue and Guild Wars 2 chat are translated directly from game data. Your own message can be translated before you send it.
 
 <table>
   <tr>
@@ -78,7 +76,7 @@ CatBridge now covers native translation, OCR, Discord voice translation, cursor 
 
 <img src="images/readme/ocr-combined-ko.jpg" alt="CatBridge OCR translating Guild Wars 2 screen text">
 
-**OCR** translates text you drag on screen, and can also translate a saved chat area with a hotkey.
+**OCR** translates non-chat screen text such as objectives, skills, achievements, and dialogue choices by dragging over it.
 
 <table>
   <tr>
@@ -104,8 +102,8 @@ Understand story, talk with players, translate screen text, and handle voice wit
 | Feature | What it does |
 | --- | --- |
 | NPC & Story Translation | NPC dialogue appears in real time on a dedicated overlay. AI engines can use CatBridge's 273-character persona dictionary to keep character tone more consistent. |
-| Two-Way Chat Translation | Party and squad messages are translated from game data. Type in your language, choose a target language, then copy it or send it instantly. |
-| OCR Screen Translation | Drag over objectives, skills, achievements, dialogue choices, or chat channels that native translation cannot read. OCR is fast and recognition is strong. |
+| Two-Way Chat Translation | Guild, Map, Team, Say, Whisper, Party, and Squad messages are translated from game data. Type in your language, choose a target language, then copy it or send it instantly. |
+| OCR Screen Translation | Drag over objectives, skills, achievements, dialogue choices, and other non-chat screen text. OCR is fast and recognition is strong. |
 | Discord Voice Translation | Capture the Discord voice session, translate speech, and show captions in the language you choose. Lock the caption window for click-through play. |
 | Mobility Tech | Replace or overlay the GW2 cursor, customize shape and color, and share cursor presets with a code. |
 | Combat Tech | With AxiBridge, WvW fights can produce quick chat reports and detailed combat windows inside the game. |
@@ -116,28 +114,27 @@ Understand story, talk with players, translate screen text, and handle voice wit
 CatBridge is a standalone app that receives game data through ArcDPS.
 
 ```text
-Guild Wars 2 -> ArcDPS -> Unofficial Extras -> arcdps_catbridge.dll -> CatBridge
+Guild Wars 2 -> ArcDPS -> CatBridge
 ```
 
-- **ArcDPS** hooks into the game client to collect data.
-- **Unofficial Extras** extracts additional info such as squad and chat data.
-- **arcdps_catbridge.dll** bridges that data to CatBridge through a named pipe.
+- **ArcDPS** loads the CatBridge plugin with the game client.
+- **arcdps_catbridge.dll** reads the game data CatBridge needs and passes it to the app.
 - **CatBridge** handles translation, overlay rendering, and AI features.
 
-ArcDPS, Unofficial Extras, and `arcdps_catbridge.dll` must all live in the same directory. If you use an addon manager like Nexus, ArcDPS may be in a subfolder; make sure the bridge DLL is placed alongside the actual ArcDPS installation.
+Install ArcDPS first, keep the CatBridge app files together, and place `arcdps_catbridge.dll` in the directory where ArcDPS is actually running. If you use an addon manager like Nexus, ArcDPS may be in a subfolder rather than next to `Gw2-64.exe`.
 
 # Important install check
 Use the ArcDPS About tab to find the real folder
 If you use Nexus or another addon manager, do not guess from the GW2 folder. Launch the game, open ArcDPS options with Alt + Shift + T, then open the last "About" tab. Check that ArcDPS is up to date there, then look at the folder path shown at the top of the tab. That path is the folder ArcDPS is actually running from, and that is the correct install location.
 
-Put both arcdps_unofficial_extras.dll and arcdps_catbridge.dll in that same folder. This still works even if Unofficial Extras was not loaded yet, or if you accidentally installed it somewhere else first. Most failed installs happen because the DLLs were placed in the visible GW2 folder while ArcDPS was actually running from an addon-manager subfolder.
+Put `arcdps_catbridge.dll` in that same folder. Most failed installs happen because the DLL was placed in the visible GW2 folder while ArcDPS was actually running from an addon-manager subfolder.
 
-After moving the files, fully restart Guild Wars 2 and open the ArcDPS About / Info tab again. A correct install shows both arcdps_unofficial_extras.dll and arcdps_catbridge.dll as loaded there. If either one is missing, it is still in the wrong folder.
+After moving the file, fully restart Guild Wars 2 and open the ArcDPS About / Info tab again. A correct install shows `arcdps_catbridge.dll` as loaded there. If it is missing, the DLL is still in the wrong folder.
 
-Other DLL files must also be in the same folder for additional functions to work properly.
+Keep the remaining DLL files from the CatBridge package next to `CatBridge.exe` so audio and other app features can load normally.
 
 ## Notes
 
-CatBridge is not affiliated with, endorsed by, or approved by ArcDPS, arcdps_unofficial_extras, or AxiBridge.
+CatBridge is not affiliated with, endorsed by, or approved by ArcDPS or AxiBridge.
 
 CatBridge is an unofficial fan-made tool and is not affiliated with, endorsed by, or approved by ArenaNet or NCSOFT.

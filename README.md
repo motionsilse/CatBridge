@@ -302,7 +302,7 @@ Guild Wars 2 -> ArcDPS -> CatBridge
 
 1. Guild Wars 2를 완전히 종료합니다.
 2. 애드온 관리자를 사용하지 않는다면 ArcDPS의 [`d3d11.dll`](https://www.deltaconnected.com/arcdps/x64/)을 다운로드해 Guild Wars 2 메인 폴더의 `Gw2-64.exe` 옆에 넣습니다.
-3. Nexus 또는 다른 애드온 관리자를 사용한다면 해당 관리자를 통해 ArcDPS를 설치합니다. 이 구성에서는 보통 ArcDPS가 `Guild Wars 2\addons` 아래 폴더의 `arcdps.dll`로 불러와집니다.
+3. Nexus나 다른 애드온 관리자를 사용한다면 ArcDPS도 그 관리자를 통해 설치하세요. 이 경우 `arcdps.dll`은 보통 `Guild Wars 2\addons` 아래의 별도 폴더에 설치됩니다. 정확한 위치는 사용하는 관리자에 따라 다를 수 있습니다.
 4. 최신 [CatBridge 릴리즈](https://github.com/motionsilse/CatBridge/releases)를 다운로드합니다.
 5. CatBridge ZIP의 압축을 풀고 앱 파일을 같은 폴더에 둡니다.
 

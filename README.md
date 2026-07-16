@@ -121,17 +121,45 @@ Guild Wars 2 -> ArcDPS -> CatBridge
 - **arcdps_catbridge.dll** reads the game data CatBridge needs and passes it to the app.
 - **CatBridge** handles translation, overlay rendering, and AI features.
 
-Install ArcDPS first, keep the CatBridge app files together, and place `arcdps_catbridge.dll` in the directory where ArcDPS is actually running. If you use an addon manager like Nexus, ArcDPS may be in a subfolder rather than next to `Gw2-64.exe`.
+## Installation
 
-# Important install check
-Use the ArcDPS About tab to find the real folder
-If you use Nexus or another addon manager, do not guess from the GW2 folder. Launch the game, open ArcDPS options with Alt + Shift + T, then open the last "About" tab. Check that ArcDPS is up to date there, then look at the folder path shown at the top of the tab. That path is the folder ArcDPS is actually running from, and that is the correct install location.
+### 1. Download ArcDPS and CatBridge
 
-Put `arcdps_catbridge.dll` in that same folder. Most failed installs happen because the DLL was placed in the visible GW2 folder while ArcDPS was actually running from an addon-manager subfolder.
+1. Download [ArcDPS](https://www.deltaconnected.com/arcdps/x64/) and install it first.
+2. Download the latest [CatBridge release](https://github.com/motionsilse/CatBridge/releases).
+3. Extract the CatBridge ZIP and keep the app files together.
 
-After moving the file, fully restart Guild Wars 2 and open the ArcDPS About / Info tab again. A correct install shows `arcdps_catbridge.dll` as loaded there. If it is missing, the DLL is still in the wrong folder.
+### 2. Put the files in the right places
 
-Keep the remaining DLL files from the CatBridge package next to `CatBridge.exe` so audio and other app features can load normally.
+| File | Purpose | Location |
+| --- | --- | --- |
+| `CatBridge.exe` | Main application | Keep it with `CatBridgeAudio.dll`, `WebRtcVad.dll`, and `catbridge_mouse.dll`, usually in the Guild Wars 2 folder. |
+| `arcdps_catbridge.dll` | Reads game data and passes it to CatBridge | The folder where ArcDPS is actually running. |
+
+If you use Nexus or another addon manager, ArcDPS may be in a subfolder instead of next to `Gw2-64.exe`. Do not guess from the visible game folder:
+
+1. Start Guild Wars 2 and open ArcDPS with **Alt + Shift + T**.
+2. Open the last **About / Info** tab.
+3. Use the folder path shown at the top of that tab as the install location for `arcdps_catbridge.dll`.
+
+### 3. Restart and verify
+
+1. Fully close Guild Wars 2, then start it again.
+2. Open the ArcDPS **About / Info** tab and confirm ArcDPS is current and `arcdps_catbridge.dll` is loaded.
+3. Run `CatBridge.exe`.
+
+### Runtime requirements
+
+- Use **Windowed Fullscreen** or **Windowed** display mode. Exclusive Fullscreen hides the overlay.
+- ArcDPS must be running normally.
+
+### If the overlay opens but nothing is translated
+
+`arcdps_catbridge.dll` is usually in the wrong folder. Check the ArcDPS **About / Info** tab again and move the DLL to the folder shown there.
+
+Party or squad chat is designed to resume after reconnecting, but in some cases you may still need to leave and rejoin the group.
+
+For screenshots, detailed file placement, and more troubleshooting, see the [full installation guide](https://catbridge.guildwar.win/install/).
 
 ## Notes
 

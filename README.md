@@ -170,3 +170,178 @@ For screenshots, detailed file placement, and more troubleshooting, see the [ful
 CatBridge is not affiliated with, endorsed by, or approved by ArcDPS or AxiBridge.
 
 CatBridge is an unofficial fan-made tool and is not affiliated with, endorsed by, or approved by ArenaNet or NCSOFT.
+
+---
+
+<p align="center">
+  <img src="https://catbridge.guildwar.win/images/catbridge-logo.png" width="96" alt="CatBridge 로고">
+</p>
+
+# CatBridge (한국어)
+
+**Guild Wars 2를 원하는 언어로 플레이하세요.**
+
+CatBridge는 스토리 대사, Guild Wars 2 채팅, 화면 OCR, Discord 음성, TTS, 음성 채팅 입력, 커스텀 커서, WvW 전투 보고서를 하나의 보조 앱에서 지원합니다.
+
+공식 사이트: https://catbridge.guildwar.win
+
+커뮤니티 Discord: https://discord.gg/hndrDWN7zA
+
+> CatBridge는 비공개 소스 소프트웨어입니다. 이 저장소는 공개 릴리즈, 문제 제보, 업데이트 안내에 사용됩니다.
+
+## 앱
+
+언어와 번역 엔진을 선택한 뒤 게임을 시작하면 됩니다.
+
+CatBridge는 Guild Wars 2가 실행되는 동안 함께 작동합니다. 메뉴와 설정은 여러 UI 언어를 지원합니다. 원하는 UI 언어가 제공되지 않더라도 채팅과 대사 번역 기능은 그대로 사용할 수 있습니다.
+
+<img src="https://catbridge.guildwar.win/images/v11/ui-localization-language-list.png" alt="CatBridge 언어 및 번역 엔진 설정">
+
+CatBridge의 초기 설정 화면입니다. 선택한 언어의 UI 번역이 제공되면 앱 화면도 해당 언어로 바뀝니다. UI 번역이 제공되지 않는 언어를 선택해도 모든 기능은 정상적으로 작동합니다.
+
+## 스토리, 채팅, 내가 보내는 메시지
+
+NPC 대사와 Guild Wars 2 채팅은 게임 데이터에서 직접 가져와 번역합니다. 내가 보낼 메시지도 전송 전에 번역할 수 있습니다.
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="images/readme/story-ko.jpg" alt="한국어로 번역된 CatBridge 스토리 대사"><br>
+      <strong>스토리 번역</strong>은 게임을 플레이하는 동안 NPC 대사를 읽기 쉽게 표시합니다.
+    </td>
+    <td width="50%">
+      <img src="https://catbridge.guildwar.win/images/v11/input-translate-output.png" alt="CatBridge로 번역한 발신 채팅 입력"><br>
+      <strong>보내는 채팅</strong>은 선택한 언어로 즉시 전송하거나, 내용을 먼저 확인할 수 있도록 복사할 수 있습니다.
+    </td>
+  </tr>
+</table>
+
+## 실제 번역 예시
+
+이전 CatBridge 버전에서 촬영한 여러 언어의 번역 예시입니다.
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="https://catbridge.guildwar.win/images/chat2-jpn.png" alt="일본어로 번역된 파티 채팅"><br>
+      <strong>파티 채팅</strong><br>일본어<br><em>이전 UI 화면입니다.</em>
+    </td>
+    <td width="50%">
+      <img src="https://catbridge.guildwar.win/images/chat5-port.png" alt="포르투갈어로 번역된 파티 채팅"><br>
+      <strong>파티 채팅</strong><br>포르투갈어<br><em>이전 UI 화면입니다.</em>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="https://catbridge.guildwar.win/images/story-turkey.png" alt="튀르키예어로 번역된 NPC 스토리 대사"><br>
+      <strong>NPC 스토리</strong><br>튀르키예어<br><em>이전 UI 화면입니다.</em>
+    </td>
+    <td width="50%">
+      <img src="https://catbridge.guildwar.win/images/story-pol.png" alt="폴란드어로 번역된 NPC 스토리 대사"><br>
+      <strong>NPC 스토리</strong><br>폴란드어<br><em>이전 UI 화면입니다.</em>
+    </td>
+  </tr>
+</table>
+
+CatBridge는 무료 번역 엔진과 선택형 AI 엔진을 통해 한국어, 영어, 프랑스어, 독일어, 스페인어, 러시아어, 아랍어, 태국어를 비롯한 수십 개 언어를 지원합니다.
+
+## 채팅 번역 그 이상
+
+CatBridge는 게임 데이터 기반 번역, OCR, Discord 음성 번역, 커서 도구, WvW 전투 보고서를 함께 제공합니다.
+
+<img src="images/readme/ocr-combined-ko.jpg" alt="Guild Wars 2 화면의 글자를 번역하는 CatBridge OCR">
+
+**OCR**은 화면을 드래그해 목표, 스킬, 업적, 대화 선택지처럼 채팅이 아닌 게임 화면의 글자를 번역합니다.
+
+<table>
+  <tr>
+    <td width="33%">
+      <img src="https://catbridge.guildwar.win/images/v11/discord-caption-ko.png" alt="Guild Wars 2 위에 표시된 CatBridge Discord 음성 번역"><br>
+      <strong>Discord 음성 번역</strong>은 Discord 음성 세션을 캡처하고 선택한 언어의 자막으로 표시합니다.
+    </td>
+    <td width="33%">
+      <img src="https://catbridge.guildwar.win/images/v11/mobility-editor-ko.png" alt="CatBridge Mobility Tech 커서 편집기"><br>
+      <strong>Mobility Tech</strong>는 GW2 커서를 교체합니다. 모양을 꾸미고, 프리셋 코드를 공유하고, 전투 및 비전투 상태에 따라 색상을 바꿀 수 있습니다.
+    </td>
+    <td width="33%">
+      <img src="images/readme/combat-report-wvw.jpg" alt="CatBridge WvW 전투 보고서 오버레이"><br>
+      <strong>Combat Tech</strong>는 AxiBridge를 사용해 간단한 WvW 전투 보고서를 채팅으로 공유하거나 자세한 결과를 오버레이 창에서 보여줍니다.
+    </td>
+  </tr>
+</table>
+
+## 번역을 중심으로, 필요한 도구까지
+
+게임을 벗어나지 않고 스토리를 이해하고, 다른 플레이어와 대화하고, 화면의 글자와 음성을 번역할 수 있습니다.
+
+| 기능 | 설명 |
+| --- | --- |
+| NPC 및 스토리 번역 | NPC 대사를 전용 오버레이에 실시간으로 표시합니다. AI 엔진은 CatBridge의 273개 캐릭터 페르소나 사전을 활용해 캐릭터의 말투를 더욱 일관되게 유지할 수 있습니다. |
+| 양방향 채팅 번역 | 길드, 맵, 팀, 일반, 귓속말, 파티, 스쿼드 채팅을 게임 데이터에서 가져와 번역합니다. 원하는 언어로 입력하고 대상 언어를 선택한 뒤 복사하거나 즉시 전송할 수 있습니다. |
+| OCR 화면 번역 | 목표, 스킬, 업적, 대화 선택지를 비롯한 채팅 외 화면의 글자를 드래그해 번역합니다. 빠르고 인식 성능이 뛰어납니다. |
+| Discord 음성 번역 | Discord 음성 세션을 캡처하고 음성을 번역해 선택한 언어의 자막으로 표시합니다. 자막 창을 잠그면 클릭을 방해하지 않습니다. |
+| Mobility Tech | GW2 커서를 교체하거나 덧씌우고, 모양과 색상을 꾸미며, 커서 프리셋을 코드로 공유할 수 있습니다. |
+| Combat Tech | AxiBridge를 사용하면 WvW 전투의 간단한 보고서를 채팅으로 공유하고 자세한 전투 결과를 게임 안의 별도 창에서 확인할 수 있습니다. |
+| API 및 엔진 설정 | M, B, C, P 또는 Google을 이용해 무료로 시작할 수 있습니다. 더 나은 번역을 원할 때 원하는 AI 엔진을 추가할 수 있습니다. |
+
+## 작동 방식
+
+CatBridge는 ArcDPS를 통해 게임 데이터를 전달받는 독립 실행형 앱입니다.
+
+```text
+Guild Wars 2 -> ArcDPS -> CatBridge
+```
+
+- **ArcDPS**는 게임 클라이언트와 함께 CatBridge 플러그인을 불러옵니다.
+- **arcdps_catbridge.dll**은 CatBridge에 필요한 게임 데이터를 읽어 앱으로 전달합니다.
+- **CatBridge**는 번역, 오버레이 표시, AI 기능을 처리합니다.
+
+## 설치
+
+### 1. ArcDPS 설치 및 CatBridge 다운로드
+
+1. Guild Wars 2를 완전히 종료합니다.
+2. 애드온 관리자를 사용하지 않는다면 ArcDPS의 [`d3d11.dll`](https://www.deltaconnected.com/arcdps/x64/)을 다운로드해 Guild Wars 2 메인 폴더의 `Gw2-64.exe` 옆에 넣습니다.
+3. Nexus 또는 다른 애드온 관리자를 사용한다면 해당 관리자를 통해 ArcDPS를 설치합니다. 이 구성에서는 보통 ArcDPS가 `Guild Wars 2\addons` 아래 폴더의 `arcdps.dll`로 불러와집니다.
+4. 최신 [CatBridge 릴리즈](https://github.com/motionsilse/CatBridge/releases)를 다운로드합니다.
+5. CatBridge ZIP의 압축을 풀고 앱 파일을 같은 폴더에 둡니다.
+
+### 2. 파일을 올바른 위치에 배치
+
+| 파일 | 용도 | 위치 |
+| --- | --- | --- |
+| `CatBridge.exe` | 메인 앱 | `CatBridgeAudio.dll`, `WebRtcVad.dll`, `catbridge_mouse.dll`과 같은 폴더에 둡니다. 보통 Guild Wars 2 폴더를 사용합니다. |
+| `arcdps_catbridge.dll` | 게임 데이터를 읽어 CatBridge로 전달 | ArcDPS가 실제로 실행되는 폴더에 넣습니다. |
+
+ArcDPS를 일반적인 수동 방식으로 설치했다면 `arcdps_catbridge.dll`을 `Gw2-64.exe` 및 `d3d11.dll` 옆에 넣습니다.
+
+Nexus 또는 다른 애드온 관리자를 사용하면 ArcDPS가 `Gw2-64.exe` 옆이 아닌 하위 폴더에 있을 수 있습니다. 눈에 보이는 게임 폴더만 보고 위치를 추측하지 마세요.
+
+1. Guild Wars 2를 실행하고 **Alt + Shift + T**로 ArcDPS 창을 엽니다.
+2. 맨 마지막 **About / Info** 탭을 엽니다.
+3. 해당 탭 위쪽에 표시되는 폴더 경로를 `arcdps_catbridge.dll`의 설치 위치로 사용합니다.
+
+### 3. 재시작 및 확인
+
+1. Guild Wars 2를 완전히 종료한 뒤 다시 실행합니다.
+2. ArcDPS의 **About / Info** 탭을 열어 ArcDPS가 최신 버전이고 `arcdps_catbridge.dll`이 불러와졌는지 확인합니다.
+3. `CatBridge.exe`를 실행합니다.
+
+### 실행 요구 사항
+
+- **창 모드 전체 화면** 또는 **창 모드**를 사용하세요. 독점 전체 화면에서는 오버레이가 보이지 않습니다.
+- ArcDPS가 정상적으로 실행 중이어야 합니다.
+
+### 오버레이는 열리지만 아무것도 번역되지 않을 때
+
+대부분 `arcdps_catbridge.dll`이 잘못된 폴더에 들어간 경우입니다. ArcDPS의 **About / Info** 탭을 다시 확인하고 DLL을 그곳에 표시된 폴더로 옮기세요.
+
+파티 또는 스쿼드 채팅은 재접속 후에도 이어지도록 설계되어 있지만, 상황에 따라 그룹에서 나갔다가 다시 참가해야 할 수 있습니다.
+
+화면 예시, 자세한 파일 배치 방법, 추가 문제 해결 방법은 [전체 설치 가이드](https://catbridge.guildwar.win/install/)에서 확인할 수 있습니다.
+
+## 참고
+
+CatBridge는 ArcDPS 또는 AxiBridge와 제휴하거나 이들의 보증 또는 승인을 받은 프로그램이 아닙니다.
+
+CatBridge는 비공식 팬 제작 도구이며 ArenaNet 또는 NCSOFT와 제휴하거나 이들의 보증 또는 승인을 받은 프로그램이 아닙니다.

@@ -123,11 +123,13 @@ Guild Wars 2 -> ArcDPS -> CatBridge
 
 ## Installation
 
-### 1. Download ArcDPS and CatBridge
+### 1. Install ArcDPS and download CatBridge
 
-1. Download [ArcDPS](https://www.deltaconnected.com/arcdps/x64/) and install it first.
-2. Download the latest [CatBridge release](https://github.com/motionsilse/CatBridge/releases).
-3. Extract the CatBridge ZIP and keep the app files together.
+1. Fully close Guild Wars 2.
+2. If you do not use an addon manager, download ArcDPS's [`d3d11.dll`](https://www.deltaconnected.com/arcdps/x64/) and place it next to `Gw2-64.exe` in the main Guild Wars 2 folder.
+3. If you use Nexus or another addon manager, install ArcDPS through that manager instead. In this setup, ArcDPS is commonly loaded as `arcdps.dll` from a folder under `Guild Wars 2\addons`.
+4. Download the latest [CatBridge release](https://github.com/motionsilse/CatBridge/releases).
+5. Extract the CatBridge ZIP and keep the app files together.
 
 ### 2. Put the files in the right places
 
@@ -135,6 +137,8 @@ Guild Wars 2 -> ArcDPS -> CatBridge
 | --- | --- | --- |
 | `CatBridge.exe` | Main application | Keep it with `CatBridgeAudio.dll`, `WebRtcVad.dll`, and `catbridge_mouse.dll`, usually in the Guild Wars 2 folder. |
 | `arcdps_catbridge.dll` | Reads game data and passes it to CatBridge | The folder where ArcDPS is actually running. |
+
+With a standard manual ArcDPS installation, put `arcdps_catbridge.dll` next to `Gw2-64.exe` and `d3d11.dll`.
 
 If you use Nexus or another addon manager, ArcDPS may be in a subfolder instead of next to `Gw2-64.exe`. Do not guess from the visible game folder:
 

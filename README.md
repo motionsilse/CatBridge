@@ -111,59 +111,49 @@ Understand story, talk with players, translate screen text, and handle voice wit
 
 ## How It Works
 
-CatBridge is a standalone app that receives game data through ArcDPS.
+CatBridge runs as a separate app that handles translation and overlays. One connection method is needed to pass Guild Wars 2 chat and NPC dialogue to CatBridge.
 
 ```text
-Guild Wars 2 -> ArcDPS -> CatBridge
+Guild Wars 2
+   ├─ Connect through ArcDPS
+   ├─ Connect through Nexus
+   └─ Connect through Version.dll
+                    ↓
+                CatBridge
 ```
 
-- **ArcDPS** loads the CatBridge plugin with the game client.
-- **arcdps_catbridge.dll** reads the game data CatBridge needs and passes it to the app.
-- **CatBridge** handles translation, overlay rendering, and AI features.
+ArcDPS, Nexus, and Version.dll are not different versions of CatBridge. They are three ways to connect the same CatBridge app to the game.
+
+- **Connect through ArcDPS** to load CatBridge alongside ArcDPS.
+- **Connect through Nexus** to load CatBridge through the Nexus addon environment.
+- **Connect through Version.dll** to use CatBridge without ArcDPS or Nexus.
+
+At least one connection method is required. You can install two or all three methods together without conflicts or duplicate output.
 
 ## Installation
 
-### 1. Install ArcDPS and download CatBridge
-
 1. Fully close Guild Wars 2.
-2. If you do not use an addon manager, download ArcDPS's [`d3d11.dll`](https://www.deltaconnected.com/arcdps/x64/) and place it next to `Gw2-64.exe` in the main Guild Wars 2 folder.
-3. If you use Nexus or another addon manager, install ArcDPS through that manager instead. In this setup, ArcDPS is commonly loaded as `arcdps.dll` from a folder  `Guild Wars 2\addons`.
-4. Download the latest [CatBridge release](https://github.com/motionsilse/CatBridge/releases).
-5. Extract the CatBridge ZIP and keep the app files together.
+2. Download the latest [CatBridge Setup](https://github.com/motionsilse/CatBridge/releases).
+3. Run Setup and select the Guild Wars 2 folder that contains `Gw2-64.exe`.
+4. Choose ArcDPS, Nexus, Version.dll, or any combination of them.
+5. When installation finishes, launch CatBridge.
 
-### 2. Put the files in the right places
+All three connection methods are selected by default. If you are not sure which one to use, you can leave the default selection unchanged.
 
-| File | Purpose | Location |
-| --- | --- | --- |
-| `CatBridge.exe` | Main application | Keep it with `CatBridgeAudio.dll`, `WebRtcVad.dll`, and `catbridge_mouse.dll`, usually in the Guild Wars 2 folder. |
-| `arcdps_catbridge.dll` | Reads game data and passes it to CatBridge | The folder where ArcDPS is actually running. |
-
-With a standard manual ArcDPS installation, put `arcdps_catbridge.dll` next to `Gw2-64.exe` and `d3d11.dll`.
-
-If you use Nexus or another addon manager, ArcDPS may be in a subfolder instead of next to `Gw2-64.exe`. Do not guess from the visible game folder:
-
-1. Start Guild Wars 2 and open ArcDPS with **Alt + Shift + T**.
-2. Open the last **About / Info** tab.
-3. Use the folder path shown at the top of that tab as the install location for `arcdps_catbridge.dll`.
-
-### 3. Restart and verify
-
-1. Fully close Guild Wars 2, then start it again.
-2. Open the ArcDPS **About / Info** tab and confirm ArcDPS is current and `arcdps_catbridge.dll` is loaded.
-3. Run `CatBridge.exe`.
+Setup never overwrites an existing `version.dll` that it does not own. If that file already supports CatBridge integration, such as Korean Patch 0.4.1 or later, it already provides the Version.dll connection and no additional method is required.
 
 ### Runtime requirements
 
 - Use **Windowed Fullscreen** or **Windowed** display mode. Exclusive Fullscreen hides the overlay.
-- ArcDPS must be running normally.
+- CatBridge and Guild Wars 2 must both be running to use translation and overlay features.
 
 ### If the overlay opens but nothing is translated
 
-`arcdps_catbridge.dll` is usually in the wrong folder. Check the ArcDPS **About / Info** tab again and move the DLL to the folder shown there.
+Fully close Guild Wars 2 and CatBridge, then start them again. If translation still does not appear, run CatBridge Setup again and confirm that at least one connection method is available.
 
 Party or squad chat is designed to resume after reconnecting, but in some cases you may still need to leave and rejoin the group.
 
-For screenshots, detailed file placement, and more troubleshooting, see the [full installation guide](https://catbridge.guildwar.win/install/).
+For detailed installation steps and troubleshooting, see the [full installation guide](https://catbridge.guildwar.win/install/).
 
 ## Use Notice
 
@@ -292,59 +282,49 @@ CatBridge는 게임 데이터 기반 번역, OCR, Discord 음성 번역, 커서 
 
 ## 작동 방식
 
-CatBridge는 ArcDPS를 통해 게임 데이터를 전달받는 독립 실행형 앱입니다.
+CatBridge는 번역과 오버레이 표시를 처리하는 별도의 앱입니다. Guild Wars 2의 채팅과 NPC 대사를 CatBridge로 전달하려면 게임 연결 방식이 하나 필요합니다.
 
 ```text
-Guild Wars 2 -> ArcDPS -> CatBridge
+Guild Wars 2
+   ├─ ArcDPS로 연결
+   ├─ Nexus로 연결
+   └─ Version.dll로 연결
+                 ↓
+             CatBridge
 ```
 
-- **ArcDPS**는 게임 클라이언트와 함께 CatBridge 플러그인을 불러옵니다.
-- **arcdps_catbridge.dll**은 CatBridge에 필요한 게임 데이터를 읽어 앱으로 전달합니다.
-- **CatBridge**는 번역, 오버레이 표시, AI 기능을 처리합니다.
+ArcDPS, Nexus, Version.dll은 서로 다른 CatBridge가 아니라 같은 CatBridge를 게임에 연결하는 세 가지 방법입니다.
+
+- **ArcDPS로 연결**하면 ArcDPS와 함께 CatBridge를 불러옵니다.
+- **Nexus로 연결**하면 Nexus 애드온 환경에서 CatBridge를 불러옵니다.
+- **Version.dll로 연결**하면 ArcDPS나 Nexus 없이 CatBridge를 불러옵니다.
+
+세 가지 중 하나 이상의 연결 방식이 필요합니다. 둘 이상을 함께 선택하거나 세 가지를 모두 설치해도 중복 없이 작동합니다.
 
 ## 설치
 
-### 1. ArcDPS 설치 및 CatBridge 다운로드
-
 1. Guild Wars 2를 완전히 종료합니다.
-2. 애드온 관리자를 사용하지 않는다면 ArcDPS의 [`d3d11.dll`](https://www.deltaconnected.com/arcdps/x64/)을 다운로드해 Guild Wars 2 메인 폴더의 `Gw2-64.exe` 옆에 넣습니다.
-3. Nexus나 다른 애드온 관리자를 사용한다면 ArcDPS도 그 관리자를 통해 설치하세요. 이 경우 `Guild Wars 2\addons`  폴더에 `arcdps.dll`로 보통 설치됩니다. 정확한 위치와 파일명은 사용자에 따라 다를 수 있습니다.
-4. 최신 [CatBridge 릴리즈](https://github.com/motionsilse/CatBridge/releases)를 다운로드합니다.
-5. CatBridge ZIP의 압축을 풀고 앱 파일을 같은 폴더에 둡니다.
+2. 최신 [CatBridge Setup](https://github.com/motionsilse/CatBridge/releases)을 다운로드합니다.
+3. Setup을 실행하고 `Gw2-64.exe`가 있는 Guild Wars 2 폴더를 선택합니다.
+4. ArcDPS, Nexus, Version.dll 중 원하는 연결 방식을 선택합니다.
+5. 설치가 끝나면 CatBridge를 실행합니다.
 
-### 2. 파일을 올바른 위치에 배치
+세 연결 방식은 기본적으로 모두 선택되어 있습니다. 잘 모르겠다면 기본 선택을 그대로 두고 설치해도 됩니다.
 
-| 파일 | 용도 | 위치 |
-| --- | --- | --- |
-| `CatBridge.exe` | 메인 앱 | `CatBridgeAudio.dll`, `WebRtcVad.dll`, `catbridge_mouse.dll`과 같은 폴더에 둡니다. 보통 Guild Wars 2 폴더를 사용합니다. |
-| `arcdps_catbridge.dll` | 게임 데이터를 읽어 CatBridge로 전달 | ArcDPS가 실제로 실행되는 폴더에 넣습니다. |
-
-ArcDPS를 일반적인 수동 방식으로 설치했다면 `arcdps_catbridge.dll`을 `Gw2-64.exe` 및 `d3d11.dll` 옆에 넣습니다.
-
-Nexus 또는 다른 애드온 관리자를 사용하면 ArcDPS가 `Gw2-64.exe` 옆이 아닌 하위 폴더에 있을 수 있습니다. 눈에 보이는 게임 폴더만 보고 위치를 추측하지 마세요.
-
-1. Guild Wars 2를 실행하고 **Alt + Shift + T**로 ArcDPS 창을 엽니다.
-2. 맨 마지막 **About / Info** 탭을 엽니다.
-3. 해당 탭 위쪽에 표시되는 폴더 경로를 `arcdps_catbridge.dll`의 설치 위치로 사용합니다.
-
-### 3. 재시작 및 확인
-
-1. Guild Wars 2를 완전히 종료한 뒤 다시 실행합니다.
-2. ArcDPS의 **About / Info** 탭을 열어 ArcDPS가 최신 버전이고 `arcdps_catbridge.dll`이 불러와졌는지 확인합니다.
-3. `CatBridge.exe`를 실행합니다.
+CatBridge Setup이 설치하지 않은 기존 `version.dll`은 덮어쓰지 않습니다. 한글패치 0.4.1 이상처럼 CatBridge 연결을 지원하는 `version.dll`은 이미 Version.dll 연결 방식을 제공하므로 다른 연결 방식을 추가하지 않아도 됩니다.
 
 ### 실행 요구 사항
 
 - **창 모드 전체 화면** 또는 **창 모드**를 사용하세요. 독점 전체 화면에서는 오버레이가 보이지 않습니다.
-- ArcDPS가 정상적으로 실행 중이어야 합니다.
+- 번역과 오버레이 기능을 사용하려면 CatBridge와 Guild Wars 2가 함께 실행 중이어야 합니다.
 
 ### 오버레이는 열리지만 아무것도 번역되지 않을 때
 
-대부분 `arcdps_catbridge.dll`이 잘못된 폴더에 들어간 경우입니다. ArcDPS의 **About / Info** 탭을 다시 확인하고 DLL을 그곳에 표시된 폴더로 옮기세요.
+Guild Wars 2와 CatBridge를 완전히 종료한 뒤 다시 실행하세요. 문제가 계속되면 CatBridge Setup을 다시 실행해 하나 이상의 연결 방식이 준비되어 있는지 확인하세요.
 
 파티 또는 스쿼드 채팅은 재접속 후에도 이어지도록 설계되어 있지만, 상황에 따라 그룹에서 나갔다가 다시 참가해야 할 수 있습니다.
 
-화면 예시, 자세한 파일 배치 방법, 추가 문제 해결 방법은 [전체 설치 가이드](https://catbridge.guildwar.win/install/)에서 확인할 수 있습니다.
+자세한 설치 방법과 문제 해결은 [전체 설치 가이드](https://catbridge.guildwar.win/install/)에서 확인할 수 있습니다.
 
 ## 사용 고지
 

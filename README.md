@@ -20,7 +20,8 @@ Choose a language and translation engine, then start playing.
 
 CatBridge runs while Guild Wars 2 is open. Menus and settings can use several UI languages. Even if a UI language is not available, chat and dialogue translation still work.
 
-<img src="https://catbridge.guildwar.win/images/v11/ui-localization-language-list.png" alt="CatBridge language and engine settings">
+<img width="1016" height="1318" alt="image" src="https://github.com/user-attachments/assets/7761a5d5-9e46-439f-96b4-ebe852e83f1e" />
+
 
 CatBridge initial setup page. The UI changes to the language you choose when that UI locale is available. If the UI locale is not available, all features still work.
 

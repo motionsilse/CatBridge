@@ -12,6 +12,8 @@ Official site: https://catbridge.guildwar.win
 
 Community Discord: https://discord.gg/hndrDWN7zA
 
+Guild Wars 2 Guide : https://guildwar.win
+
 > CatBridge is closed-source software. This repository is used for public releases, issue tracking, and update notes.
 
 ## The App
@@ -183,6 +185,8 @@ CatBridge는 스토리 대사, Guild Wars 2 채팅, 화면 OCR, Discord 음성, 
 공식 사이트: https://catbridge.guildwar.win
 
 커뮤니티 Discord: https://discord.gg/hndrDWN7zA
+
+길드워2 가이드 : https://guildwar.win
 
 > CatBridge는 비공개 소스 소프트웨어입니다. 이 저장소는 공개 릴리즈, 문제 제보, 업데이트 안내에 사용됩니다.
 

@@ -14,8 +14,17 @@ Community Discord: https://discord.gg/hndrDWN7zA
 
 Guild Wars 2 Guide : https://guildwar.win
 
- [![CatBridge 사용 가이드])](https://www.youtube.com/watch?v=hLlvv0iyZtg)
+<h2>🎬 CatBridge 설치 및 사용 가이드</h2>
 
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=hLlvv0iyZtg">
+    <img
+      src="https://img.youtube.com/vi/hLlvv0iyZtg/maxresdefault.jpg"
+      alt="CatBridge 설치 및 사용 가이드"
+      width="800"
+    />
+  </a>
+</p>
 > CatBridge is closed-source software. This repository is used for public releases, issue tracking, and update notes.
 
 ## The App

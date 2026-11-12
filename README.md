@@ -14,13 +14,13 @@ Community Discord: https://discord.gg/hndrDWN7zA
 
 Guild Wars 2 Guide : https://guildwar.win
 
-<h2>🎬 CatBridge 설치 및 사용 가이드</h2>
+<h2>🎬 CatBridge Install and Setup Guide</h2>
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=hLlvv0iyZtg">
     <img
       src="https://img.youtube.com/vi/hLlvv0iyZtg/maxresdefault.jpg"
-      alt="CatBridge 설치 및 사용 가이드"
+      alt="CatBridge Install and Setup Guide"
       width="800"
     />
   </a>
@@ -198,6 +198,18 @@ CatBridge는 스토리 대사, Guild Wars 2 채팅, 화면 OCR, Discord 음성, 
 커뮤니티 Discord: https://discord.gg/hndrDWN7zA
 
 길드워2 가이드 : https://guildwar.win
+
+<h2>🎬 CatBridge 설치 및 사용 가이드</h2>
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=hLlvv0iyZtg">
+    <img
+      src="https://img.youtube.com/vi/hLlvv0iyZtg/maxresdefault.jpg"
+      alt="CatBridge 설치 및 사용 가이드"
+      width="800"
+    />
+  </a>
+</p>
 
 > CatBridge는 비공개 소스 소프트웨어입니다. 이 저장소는 공개 릴리즈, 문제 제보, 업데이트 안내에 사용됩니다.
 
